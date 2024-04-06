@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="rock-image.png" alt="Rock image" onclick="changeImg()">
+        </div>
+        <div class="choice" id="paper">
+            <img src="paper-image.png" alt="Paper image" onclick="changeImg()">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="scissor-image.png" alt="Scissor image" onclick="changeImg()">
+        </div>
+    </div>
+
+    <div class="selected-choice-container">
+        <div class="user-choice display-choice">
+            <div class="selected-choice-user">
+                <img src="Blank-image.jpg" id="selected-img-user">
+            </div>
+        </div>
+        <p id="Versus">VS</p>
+        <div class="comp-choice display-choice">
+            <div class="selected-choice-comp">
+                <img src="Blank-image.jpg" id="selected-img-comp">
+            </div>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p class="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p class="comp-score">0</p>
+            <p>comp</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <div id="msg">Play your move</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
